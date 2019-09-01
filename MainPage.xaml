@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Blue"
+             x:Class="GridX.MainPage">
+
+
+    <Grid Margin="20,55,10,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.15*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+           Text="Input :" 
+           TextColor="DarkOrange"
+           FontSize="Title"
+           FontAttributes="Bold"/>
+        <Label Grid.Column="1"
+           Text="" />
+        <Label Grid.Row="1"
+           Text="IBO (feet per second):"         
+           TextColor="White" 
+           FontSize="Title"/>
+        <Entry Placeholder=""
+           Grid.Row="1"
+           Grid.Column="1" 
+           HeightRequest="0.5"
+           BackgroundColor="White"
+           TextColor="Black"/>
+        <Label Grid.Row="2"
+           Text="Draw Length (inches):"
+           TextColor="White" 
+           FontSize="Title"/>
+        <Label Grid.Column="1"
+           Grid.Row="2"
+           Text="[26]" />
+        <Label Grid.Row="3"
+           Text="Draw Weight (pounds):"
+           TextColor="White" 
+           FontSize="Title"/>
+        <Label Grid.Column="1"
+           Grid.Row="3"
+           Text="[52]" />
+        <Label Grid.Row="4"
+           Text="Arrow Weight (grains):"
+           TextColor="White" 
+           FontSize="Title"/>
+        <Label Grid.Column="1"
+           Grid.Row="4"
+           Text="[365]" />
+
+    </Grid>
+
+
+</ContentPage>
